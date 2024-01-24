@@ -4,16 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey website with daisyui</title>
-</head>
-<body>
-   <header>
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 
+                 <!-- tailwind css cdn  -->
+                 <script src="https://cdn.tailwindcss.com"></script>
+
+                     <!-- Font awsome link  -->
+                   <script src="https://kit.fontawesome.com/08ad726228.js" crossorigin="anonymous"></script>
+
+
+                   <!-- google font  -->
+                   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+                          <!-- customize color  -->
+                          <script>
+                           tailwind.config = {
+                             theme: {
+                               extend: {
+                                 colors: {
+                                   'button-p': '#FF4240',
+                                   clifford: '#da373d',
+                                   clifford: '#da373d',
+                                 }
+                               }
+                             }
+                           }
+                         </script>
+
+
+
+                        <style>
+                           .manrope-font{
+                              font-family: 'Manrope', sans-serif;
+                           }
+                        </style>
+
+
+
+</head>
+<body class="manrope-font">
+   <header>
+<nav  class="my-24 mx-2 gap-6 lg:mx-32">
+   <div class="navbar flex  bg-base-100">
+      <div class="flex-1 ">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a></a>Page</li>
+            <li><a>Blog</a></li>
+            <li><a>contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost sm:text-xl  lg:text-4xl font-extrabold">
+         Hockey<span class="text-[#FF4240]">'</span>s</a>
+      </div>
+      <div class="flex-1 hidden lg:flex">
+        <ul class="menu menu-horizontal text-xl px-1">
+         <li class="text-[#FF4240]"><a>Home</a></li>
+         <li><a>About</a></li>
+         <li><a>Page</a></li>
+         <li><a>Blog</a></li>
+         <li><a>contact</a></li>
+        </ul>
+      </div>
+      <div class="flex justify-center gap-0 lg:gap-6">
+         <i class="fa-solid  fa-magnifying-glass"></i>
+        <a class="btn bg-[#FF4240] text-white text-lg lg:text-2xl
+        font-medium lg:font-bold">Get Ticket</a>
+      </div>
+    </div>
+</nav>
+                     <!-- slider -->
+
+<div class="carousel w-full">
+                    <!-- slider-1  -->
+
+  <div id="slide1" class="carousel-item relative h-[550] w-full">
+    <img src="Images/1.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative  h-[550] w-full">
+    <img class="rounded-2xl" src="Images/30.jpg" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+
+</div>
+               <!-- professional hockey -->
+
+               <div class="mt-32 space-y-6">
+                <h3 class="text-4xl font-extrabold text-center">Professional Hockeys Club</h3>
+                <p class="text-xl font-medium text-center ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+               </div>
+                              <!-- radial progress -->
+               <div class="my-24 flex flex-col lg:flex-row justify-center">
+                
+                                      <!-- radial span -1  -->
+                <div class="text-center">
+                  <div class="radial-progress text-black   font-extrabold" style="--value:87; color: #b93434;" role="progressbar">87%</div>
+                  <h3 class="text-center text-xl font-extrabold" >Prayer Facility</h3>
+                  <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                                      <!-- radial span -2  -->
+                <div class="text-center">
+                  <div class="radial-progress text-black   font-extrabold" style="--value:95; color:#49D293;" role="progressbar">95%</div>
+                  <h3 class="text-center text-xl font-extrabold" >Experienced Coach</h3>
+                  <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                                      <!-- radial span -3  -->
+                <div class="text-center">
+                  <div class="radial-progress text-black   font-extrabold" style="--value:90; color:#7fbd0d;" role="progressbar">90%</div>
+                  <h3 class="text-center text-xl font-extrabold" >Senior Player</h3>
+                  <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                                      <!-- radial span -4-->
+                <div class="text-center">
+                  <div class="radial-progress text-black   font-extrabold" style="--value:80; color:#1411a1 ;" role="progressbar">80%</div>
+                  <h3 class="text-center text-xl font-extrabold" >Training Ground</h3>
+                  <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                    </div>
+
+                    <!-- program section -->
+                    <div class="mt-32 space-y-6">
+                      <h3 class="text-4xl font-extrabold text-center">Program Sections</h3>
+                      <p class="text-xl font-medium text-center ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                     </div>
+
+
+                     <!-- background -->
+
+                     <section class="max-w-screen-sm">
+                      <div class="my-24  justify-between   gap-8 rounded-2xl  grid grid-cols-1 lg:grid-cols-2  "> 
+   
+               
+                        <div class=" py-24 px-8 rounded-2xl  bg-no-repeat bg-cover   bg-[url('./images/2.png')]">
+                         
+                          <h3 class="text-3xl font-extrabold mb-6 ">Junior Program</h3>
+                         <p class="leading- mb-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br> Elit elit 
+                          enim sagittis turpis in magna. <br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                         <button class="rounded-lg text-xl font-bold  bg-button-p mb-6">Register Now!</button>
+                         
+                        </div>
+                   
+                  
+                 
+                        <div class=" py-24 px-8 rounded-2xl  bg-no-repeat bg-cover  bg-[url('./images/2.png')]">
+                         
+                          <h3 class="text-3xl font-extrabold mb-6 ">Junior Program</h3>
+                         <p class="leading- mb-6">Dolor sit amet consectetur. Ut urna diam quis sagittis. <br> Elit elit 
+                          enim sagittis turpis in magna. <br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                         <button class="rounded-lg text-xl font-bold  bg-button-p mb-6">Register Now!</button>
+                         
+                        </div>
+                      
+                      </div>
+                     </section>
+                     
    </header> 
    <main>
 
    </main>
    <footer>
-    
+
    </footer>
 </body>
 </html>
